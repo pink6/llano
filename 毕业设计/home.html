@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" /> 
+<title>首页</title>
+<link href="css/style.css" rel="stylesheet" type="text/css"  />
+<link href="css/fancybox.css" rel="stylesheet" type="text/css" />
+<script>
+function myZoom(){
+	var w = window.innerWidth;
+	var mw = 1200;
+	var radio = w/mw;
+	document.getElementsByTagName("html")[0].style.zoom = radio ;
+}
+
+myZoom()
+window.onresize = function(){ myZoom() }
+	
+</script>
+<script src="js/jquery.js"></script>
+<script src="js/fancybox.js"></script>
+<style type="text/css">
+<!--
+body {
+	margin-top: 0px;
+}
+-->
+</style></head>
+
+<body>
+<div class="loading" id="loading">
+    <div class="loading-container">
+        <img src="images/loading-fill.png" class="loading-fill" />
+        <div class="loadingmoonmask"></div>
+        <img src="images/loading-moon.png" class="loading-moon" />
+        <img src="images/loading-text.png" class="loading-fill" />
+        <img src="images/loading-star-top.png" class="loading-star-top" />
+        <img src="images/loading-star-middle.png" class="loading-star-middle" />
+        <img src="images/loading-star-bottom.png" class="loading-star-bottom" />
+    </div>
+</div>
+<script>
+	var load = document.getElementById("loading")
+	setTimeout(function(){
+		load.style.display = "none";
+	},6000)
+</script>
+
+<audio src="video/bg.mp3" controls="controls" autoplay="autoplay" loop="loop" class="audio" id="audio" >
+您的浏览器不支持 audio 标签。
+</audio>
+<a href="javascript:;" class="play"></a>
+<div class="wrapper">
+	<div class="full-bg"></div>
+    <div class="fixed">
+    	<img src="images/head.gif" class="gif" >
+    </div>
+	<div class="main-1 ab">
+    	<a href="javascript:;" class="menu" ></a>
+    	<ul class="nav" style="display:none;">
+    		<li class="nav-1"><a href="home.html">home</a></li>
+    		<li class="nav-2">
+	    		<a href="javascript:;">
+	    			<span>collection</span>
+					<ul class="subnav" style="display:none">
+						<li><a href="snow.html">LL 雪人系列</a></li>
+						<li><a href="pop.html">LL pop系列</a></li>
+						<li><a href="static.html">LL 静物系列</a></li>
+						<li><a href="sleep.html">LL 睡眠系列</a></li>
+					</ul>
+	    		</a>
+    		</li>
+    		<li class="nav-3"><a href="video.html">video</a></li>
+    		<li class="nav-4"><a href="contact.html">contact us</a></li>
+    		<li class="nav-5"><a href="about.html">about</a></li>
+    		<li class="nav-6"><a href="http://llab.taobao.com">shops</a></li>
+    	</ul>
+    	
+    </div>
+    <div class="main-2 mt-617">
+    	<img class="top" src="images/bg_02_top.png"  />
+    	<a href="snow.html" class="tag t1 no-bor" >《SNOWMAN》雪人系列</a>
+        <a href="static.html" class="tag t2 no-bor" >LLANO静物迷你系列</a>
+        <a href="sleep.html" class="tag t3" >LLANO睡眠系列</a>
+        <a href="pop.html" class="tag t4" >LLANO POPLL系列</a>
+        <a rel="group" href="images/img1.jpg" class="scan" ><img src="images/img1.jpg" class="img img1" id="float" /></a>
+        <a rel="group" href="images/img2.jpg" class="scan" ><img src="images/img2.jpg" class="img img2" id="float2" /></a>
+    </div>
+    <div class="main-3"></div>
+    <div class="main-4">
+    	<a rel="group" href="images/img3.jpg" class="scan" ><img src="images/img3.jpg" class="img img3" /></a>
+        <a rel="group" href="images/img4.jpg" class="scan" ><img src="images/img4.jpg" class="img img4" /></a>
+        <a rel="group" href="images/img5.jpg" class="scan" ><img src="images/img5.jpg" class="img img5" /></a>
+        <a rel="group" href="images/img6.jpg" class="scan" ><img src="images/img6.jpg" class="img img6" /></a>
+        <a rel="group"  href="images/img7.jpg" class="scan" ><img src="images/img7.jpg" class="img img7" /></a>
+        <a rel="group" href="images/img8.jpg" class="scan" ><img src="images/img8.jpg" class="img img8" /></a>
+        <img src="images/bottom.png" class="img img9" />    </div>
+<div class="main-5">
+    	<video class="video" controls="controls"  src="video/video1.mp4"></video>
+    </div>
+    <div class="home-footer"></div>
+</div>
+<script>
+$(document).ready(function(){
+	$(".scan").fancybox({
+		'cyclic': true
+	});
+	$(".menu").on('click',function(){
+		$(".full-bg").css("display","block")
+		$(".nav").fadeIn(800)
+	})
+	$(".full-bg").click(function(){
+		$(".nav").fadeOut(800)
+		$(this).fadeOut(500)
+	})
+
+	$(".nav-2").mouseover(function(){
+		$(".subnav").stop().fadeIn(800)
+	}).mouseleave(function(){
+		$(".subnav").stop().fadeOut(800)
+	})
+
+	var before = 0;
+	$(document).scroll(function(){
+		var top = $(document).scrollTop()
+		var float1 = parseInt($("#float").css("top"))
+		var float2 = parseInt($("#float2").css("top"))
+		var change = parseInt(top/200)
+		if(top < 880){
+			if(top - before > 0){
+				$("#float").css("top",float1 - change)
+				$("#float2").css("top",float2 + change)
+			}else{
+				$("#float").css("top",float1 + change)
+				$("#float2").css("top",float2 - change)
+			}
+		}
+		before = top;
+	})
+
+	var audio = document.getElementById("audio")
+	$(".play").on('click',function(){
+		$(this).toggleClass('m-on')
+		if(audio.paused){
+			audio.play()
+		}else{
+			audio.pause()
+		}
+		
+	})
+})
+</script>
+</body>
+</html>
