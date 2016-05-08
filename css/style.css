@@ -143,6 +143,24 @@ body{ overflow-x: hidden; font-family: "微软雅黑"; }
 .about .name4{ left: 130px; top: 734px; }
 .about .name5{ left: 675px; top: 1209px; }
 
+.shops{ position: relative; height:689px; padding-top:150px; background: url(../images/shop.jpg) top no-repeat; margin:0 auto; }
+#focus_Box{position:relative;width:1000px;height:308px;margin:20px auto;}
+#focus_Box ul{position:relative;width:1000px;height:308px}
+#focus_Box li{z-index:0;position:absolute; width:0px;background:#787878;height:0px;top:146px;cursor:pointer;left:377px;border-radius:4px;box-shadow:1px 1px 12px rgba(200, 200, 200, 1)}
+#focus_Box li img{width:100%;height:100%;vertical-align:top}
+#focus_Box li p{position:absolute;left:0;bottom:0px;width:100%;height:40px;line-height:40px;text-indent:8px;color:#fff;}
+#focus_Box li p span{display:inline-block;width:70%;height:40px;overflow:hidden;}
+#focus_Box .prev,#focus_Box .next{display:block;z-index:100;overflow:hidden;cursor:pointer;position:absolute;width:37px;height:62px;top:171px;}
+#focus_Box .prev{background:url(../images/shop/last.png) left bottom no-repeat;left:-80px}
+#focus_Box .next{background:url(../images/shop/next.png) right bottom no-repeat;right:-80px} 
+#focus_Box .prev:hover{background-position:left top;}
+#focus_Box .next:hover{background-position:right top;}
+#focus_Box a.imgs-scroll-btn{display:block;position:absolute;z-index:110;top:7px;right:15px;width:51px;height:23px;overflow:hidden;text-indent:-999px;}
+
+.more{ position: absolute; bottom: 30px; left: 545px; }
+
+
+
 
 .loading { width: 100%; height: 100%; background-color: #323b4d; position: fixed; z-index: 200; }
 .loading-container { width: 197px; height: 170px; font-size: 50px; position: fixed; top: 50%; left: 50%; margin-left: -98px; margin-top: -85px; display: block; }
