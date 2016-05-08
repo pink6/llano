@@ -21,6 +21,31 @@
 <script src="js/jquery.js"></script>
 </head>
 <body>
+<div class="full-bg"></div>
+    <div class="fixed">
+    	<img src="images/head.gif" class="gif" >
+    </div>
+	<div class="main-1 ab">
+    	<a href="javascript:;" class="menu" ></a>
+    	<ul class="nav" style="display:none;">
+    		<li class="nav-1"><a href="home.html">home</a></li>
+    		<li class="nav-2">
+	    		<a href="javascript:;">
+	    			<span>collection</span>
+					<ul class="subnav" style="display:none">
+						<li><a href="snow.html">LL 雪人系列</a></li>
+						<li><a href="pop.html">LL pop系列</a></li>
+						<li><a href="static.html">LL 静物系列</a></li>
+						<li><a href="sleep.html">LL 睡眠系列</a></li>
+					</ul>
+	    		</a>
+    		</li>
+    		<li class="nav-3"><a href="video.html">video</a></li>
+    		<li class="nav-4"><a href="contact.html">contact us</a></li>
+    		<li class="nav-5"><a href="about.html">about</a></li>
+    		<li class="nav-6"><a href="shop.html">shops</a></li>
+    	</ul>
+    </div>
 <div class="wrapper shops">
 	<div id="focus_Box">
 		<span class="prev">&nbsp;</span>
@@ -169,9 +194,25 @@
 		</ul>
 
 	</div>
-	<a class="more" href="https://llab.taobao.com/" target="_blank" >点击查看更多</a>
+	<a class="more" href="https://llab.taobao.com/"  >点击查看更多</a>
 </div>
 <script>
+
+$(".menu").on('click',function(){
+	$(".full-bg").css("display","block")
+	$(".nav").fadeIn(800)
+})
+$(".full-bg").click(function(){
+	$(".nav").fadeOut(800)
+	$(this).fadeOut(500)
+})
+
+$(".nav-2").mouseover(function(){
+	$(".subnav").stop().fadeIn(800)
+}).mouseleave(function(){
+	$(".subnav").stop().fadeOut(800)
+})
+
 function ZoomPic ()
 {
 	this.initialize.apply(this, arguments)	
@@ -186,7 +227,7 @@ ZoomPic.prototype =
 		this.aLi = this.wrap.getElementsByTagName("li");
 		this.prev = this.wrap.getElementsByTagName("span")[0];
 		this.next = this.wrap.getElementsByTagName("span")[1];
-		this.timer = 1000;
+		this.timer = 3000;
 		this.aSort = [];
 		this.iCenter = 2;
 		this._doPrev = function () {return _this.doPrev.apply(_this)};

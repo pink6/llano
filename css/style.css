@@ -150,7 +150,7 @@ body{ overflow-x: hidden; font-family: "微软雅黑"; }
 #focus_Box li img{width:100%;height:100%;vertical-align:top}
 #focus_Box li p{position:absolute;left:0;bottom:0px;width:100%;height:40px;line-height:40px;text-indent:8px;color:#fff;}
 #focus_Box li p span{display:inline-block;width:70%;height:40px;overflow:hidden;}
-#focus_Box .prev,#focus_Box .next{display:block;z-index:100;overflow:hidden;cursor:pointer;position:absolute;width:37px;height:62px;top:171px;}
+#focus_Box .prev,#focus_Box .next{display:block;z-index:50;overflow:hidden;cursor:pointer;position:absolute;width:37px;height:62px;top:171px;}
 #focus_Box .prev{background:url(../images/shop/last.png) left bottom no-repeat;left:-80px}
 #focus_Box .next{background:url(../images/shop/next.png) right bottom no-repeat;right:-80px} 
 #focus_Box .prev:hover{background-position:left top;}
