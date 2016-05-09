@@ -6,29 +6,17 @@
 <title>商品展示</title>
 <link href="css/style.css" rel="stylesheet" type="text/css"  />
 <link href="css/fancybox.css" rel="stylesheet" type="text/css" />
-<script>
-// function myZoom(){
-// 	var w = window.innerWidth;
-// 	var mw = 1200;
-// 	var radio = w/mw;
-// 	document.getElementsByTagName("html")[0].style.zoom = radio ;
-// }
-
-// myZoom()
-// window.onresize = function(){ myZoom() }
-	
-</script>
 <script src="js/jquery.js"></script>
 </head>
 <body>
 <div class="full-bg"></div>
 	<div class="main-1 ab">
-    	<a href="javascript:;" class="menu" ></a>
-    	<ul class="nav" style="display:none;">
-    		<li class="nav-1"><a href="home.html">home</a></li>
+    	<a href="javascript:;" id="menu" class="menu" ></a>
+    	<ul class="nav" id="nav" style="display:none;">
+    		<li class="nav-1"><a href="home.html">home<br><span> 首页</span></a></li>
     		<li class="nav-2">
 	    		<a href="javascript:;">
-	    			<span>collection</span>
+	    			collection<br> <span>系列</span>
 					<ul class="subnav" style="display:none">
 						<li><a href="snow.html">LL 雪人系列</a></li>
 						<li><a href="pop.html">LL pop系列</a></li>
@@ -37,10 +25,10 @@
 					</ul>
 	    		</a>
     		</li>
-    		<li class="nav-3"><a href="video.html">video</a></li>
-    		<li class="nav-4"><a href="contact.html">contact us</a></li>
-    		<li class="nav-5"><a href="about.html">about</a></li>
-    		<li class="nav-6"><a href="shop.html">shops</a></li>
+    		<li class="nav-3"><a href="video.html">video<br> <span>视频</span></a></li>
+    		<li class="nav-4"><a href="contact.html">contact us <br> <span>联系我们</span></a></li>
+    		<li class="nav-5"><a href="about.html">about<br><span> 关于</span></a></li>
+    		<li class="nav-6"><a href="shop.html">shops <br> <span>店铺</span></a></li>
     	</ul>
     </div>
 <div class="wrapper shops">
@@ -194,6 +182,18 @@
 	<a class="more" href="https://llab.taobao.com/"  >点击查看更多</a>
 </div>
 <script>
+function myZoom(){
+	var w = window.innerWidth;
+	var mw = 1200;
+	var radio = w/mw;
+	document.getElementById("nav").style.zoom = radio ;
+	document.getElementById("menu").style.zoom = radio ;
+}
+
+myZoom()
+window.onresize = function(){ myZoom() }
+	
+
 
 $(".menu").on('click',function(){
 	$(".full-bg").css("display","block")

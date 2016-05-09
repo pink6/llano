@@ -2,13 +2,13 @@
 /* CSS Document */
 *{margin:0; padding:0}
 ul{ list-style: none;}
-a{color:#000; text-decoration:none;}
+a{color:#ea5f42; text-decoration:none;}
 
 body{ overflow-x: hidden; font-family: "微软雅黑"; }
 .wrapper{width:1200px; overflow:hidden;}
 .main-1{ height:697px;  position:relative;  background-size: 100% 100%;}
 .ab{position:absolute; left:0;top:0;}
-.menu{position:absolute; left:20px; top:20px; width:30px; height:30px; background:url(../images/menu.png) no-repeat; background-size: 100% 100%; }
+.menu{position:absolute; left:20px; top:20px; width:40px; height:50px; background:url(../images/menu.png) no-repeat; background-size: 100% 100%; }
 
 .fixed{position:fixed;left:0;top:0;width:100%;height:679px; background:url(../images/bg_01.jpg) center no-repeat;}
 .mt-617{margin-top:617px;}
@@ -57,6 +57,7 @@ body{ overflow-x: hidden; font-family: "微软雅黑"; }
 .nav .nav-4{ top:0px; left:600px; }
 .nav .nav-5{ top:100px; left:800px; }
 .nav .nav-6{ top:0px; left:1000px; }
+.nav span{ font-size:18px; line-height: 20px; }
 .subnav{ padding-left:40px; line-height: 40px;}
 .subnav a{ color:#fff; }
 
@@ -80,9 +81,9 @@ body{ overflow-x: hidden; font-family: "微软雅黑"; }
 .pop{}
 .pop .main-1{height:752px; background: url(../images/pop/pop_01.jpg) no-repeat; background-size: 100% 100%; background-size: 100% 100%; background-size: 100% 100%;}
 .pop .main-2{height:1994px; background: url(../images/pop/pop_02.jpg) no-repeat; background-size: 100% 100%; background-size: 100% 100%; background-size: 100% 100%;}
-.pop .main-3{height:1025px; background: url(../images/pop/pop_03.jpg) no-repeat; background-size: 100% 100%; background-size: 100% 100%; background-size: 100% 100%;}
-.pop .main-4{height:220px; background: url(../images/pop/pop_04.jpg) no-repeat; background-size: 100% 100%; background-size: 100% 100%; background-size: 100% 100%;}
-.pop .img1{ left:216px; top:217px;}
+.pop .main-3{height:960px; background: url(../images/pop/pop_03.jpg) no-repeat; background-size: 100% 100%; background-size: 100% 100%; background-size: 100% 100%;}
+.pop .main-4{height:250px; background: url(../images/pop/pop_04.jpg) no-repeat; background-size: 100% 100%; background-size: 100% 100%; background-size: 100% 100%;}
+.pop .img1{ left:217px; top:217px;}
 .pop .img2{ left:790px; top:487px;}
 .pop .img3{ left:225px; top:850px;}
 .pop .img4{ left:615px; top:850px;}
@@ -92,8 +93,8 @@ body{ overflow-x: hidden; font-family: "微软雅黑"; }
 .static{}
 .static .main-1{height:843px; background: url(../images/static/static_01.jpg) no-repeat; background-size: 100% 100%; background-size: 100% 100%; background-size: 100% 100%;}
 .static .main-2{height:1682px; background: url(../images/static/static_02.jpg) no-repeat; background-size: 100% 100%; background-size: 100% 100%; background-size: 100% 100%;}
-.static .main-3{height:1042px; background: url(../images/static/static_03.jpg) no-repeat; background-size: 100% 100%; background-size: 100% 100%; background-size: 100% 100%;}
-.static .main-4{height:216px; background: url(../images/static/static_04.jpg) no-repeat; background-size: 100% 100%; background-size: 100% 100%; background-size: 100% 100%;}
+.static .main-3{height:1090px; background: url(../images/static/static_03.jpg) no-repeat; background-size: 100% 100%; background-size: 100% 100%; background-size: 100% 100%;}
+.static .main-4{height:260px; background: url(../images/static/static_04.jpg) no-repeat; background-size: 100% 100%; background-size: 100% 100%; background-size: 100% 100%;}
 .static .img1{ left:141px; top:192px;}
 .static .img2{ left: 596px; top:650px;}
 .static .img3{ left: 124px; top:1113px; border-radius:50%;}
@@ -102,7 +103,7 @@ body{ overflow-x: hidden; font-family: "微软雅黑"; }
 .sleep{}
 .sleep .main-1{height:971px; background: url(../images/sleep/sleep_01.jpg) no-repeat; background-size: 100% 100%; background-size: 100% 100%; background-size: 100% 100%;}
 .sleep .main-2{height:1501px; background: url(../images/sleep/sleep_02.jpg) no-repeat; background-size: 100% 100%; background-size: 100% 100%; background-size: 100% 100%;}
-.sleep .main-3{height:1048px; background: url(../images/sleep/sleep_03.jpg) no-repeat; background-size: 100% 100%; background-size: 100% 100%; background-size: 100% 100%;}
+.sleep .main-3{height:1150px; background: url(../images/sleep/sleep_03.jpg) no-repeat; background-size: 100% 100%; background-size: 100% 100%; background-size: 100% 100%;}
 .sleep .main-4{height:277px; background: url(../images/sleep/sleep_04.jpg) no-repeat; background-size: 100% 100%; background-size: 100% 100%; background-size: 100% 100%;}
 .sleep .img1{ left:92px; top:37px;}
 .sleep .img2{ left:617px; top:40px;}
