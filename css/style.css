@@ -10,7 +10,7 @@ body{ overflow-x: hidden; font-family: "微软雅黑"; }
 .ab{position:absolute; left:0;top:0;}
 .menu{position:absolute; left:20px; top:20px; width:40px; height:50px; background:url(../images/menu.png) no-repeat; background-size: 100% 100%; }
 
-.fixed{position:fixed;left:0;top:0;width:100%;height:679px; background:url(../images/bg_01.jpg) center no-repeat;}
+.fixed{position:fixed;left:0;top:0;width:100%;height:679px; background:url(../images/bg_01.jpg) top center no-repeat;}
 .mt-617{margin-top:617px;}
 
 .main-2{ height:899px; background:url(../images/bg_02.png) center no-repeat;  position:relative; background-size: 100% 100%;}
